@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}{{ SITENAME }} - آرشیو{% endblock %}
+{% block content %}
+<h3>آرشیو</h3>
+
+<div class="archives">
+{% for article in dates %}
+	<div class="row">
+		<div class="span2">{{ article.locale_date }}</div>
+		<div class="span6"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></div>
+	</div>
+{% endfor %}
+</div>
+{% endblock content %}

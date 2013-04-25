@@ -1,0 +1,89 @@
+@font-face {
+	font-family: BMitra;
+	font-weight: normal;
+	src: url('../font/BMitra.eot?#') format('eot'), url('../font/BMitra.woff') format('woff'), url('../font/BMitra.ttf') format('truetype');
+}
+@font-face {
+	font-family: BMitra;
+	font-weight: bold;
+	src: url('../font/BMitraBold.eot?#') format('eot'), url('../font/BMitraBold.woff') format('woff'), url('../font/BMitraBold.ttf') format('truetype');
+}
+
+body {
+	direction: rtl;
+}
+p {
+	text-align: justify;
+}
+body {
+	font-family: BMitra;
+	font-size: 18px;
+	line-height: 24px;
+}
+.nav-tabs>li, .nav-pills>li {
+	float: right;
+}
+.container {
+	max-width: 700px;
+}
+hr {
+	margin: 5px 0;
+}
+.nav {
+	margin-bottom: 0;
+}
+a {
+	text-decoration: none !important;
+}
+.row {
+	margin-left: 0;
+	margin-right: 20px;
+}
+[class*="span"] {
+	float: right;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/* floating footer */
+html, body {
+	height: 100%;
+}
+.footer, .push {
+	height: 60px;
+}
+.wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -60px;
+}
+
+.banner {
+	padding: 20px;
+	font-size: 50px;
+	text-align: center;
+	margin: 50px 0 20px;
+}
+.banner a {
+	padding: 10px;
+}
+
+.post {
+	margin-bottom: 30px;
+}
+.post h3 {
+	margin-bottom: 0;
+}
+.info {
+	font-style: italic;
+	font-size: .9em;
+	margin-bottom: 10px;
+}
+
+.footer .copyright {
+	float: left;
+	font-size: .9em;
+	margin-top: 4px;
+	color: #aaa;
+}

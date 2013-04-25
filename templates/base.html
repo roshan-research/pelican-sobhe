@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+        {% block head %}
+        <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+        
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments.css" type="text/css" />
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
+        <meta charset="utf-8" />
+      
+        {% if FEED_RSS %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+        {% endif %}
+
+        {% endblock head %}
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="banner">
+                <a href="{{ SITEURL }}">{{ SITENAME }}</a>
+            </div>
+            {% block content %}
+            {% endblock %}
+        </div>
+        <div class="push"></div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <hr/>
+            <div class="copyright">
+                کاری از <a href="{{SITEURL}}">{{AUTHOR}}</a>
+            </div>
+            {% block navigation %}
+                <ul class="nav nav-pills pull-right">
+                  <li><a href="{{ SITEURL }}/archives.html">آرشیو</a></li>
+                  <li><a href="{{ SITEURL }}/{{ FEED_RSS }}">خبرخوان</a> </li>
+                </ul>
+            {% endblock navigation %}
+        </div>
+    </div>
+    {% include 'analytics.html' %}
+</body>
+</html>

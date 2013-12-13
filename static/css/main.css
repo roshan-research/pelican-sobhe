@@ -73,7 +73,7 @@ html, body {
 }
 
 .post {
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 .post h3 {
 	margin-bottom: 7px;
@@ -88,12 +88,11 @@ html, body {
 .post .content div {
 	margin-bottom: 10px;
 }
-.post p img {
-	margin: 25px auto;
+.post img, .post iframe {
+	box-shadow: 0 0 30px #aaa;
+	margin: 30px auto !important;
+	border-radius: 5px;
 	display: block;
-}
-.post img {
-	box-shadow: 0 0 40px #aaa;
 }
 
 .archives {

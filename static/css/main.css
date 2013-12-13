@@ -15,7 +15,7 @@ body {
 p {
 	text-align: justify;
 }
-body, h1, h2, h3 {
+body, h1, h2, h3, h4 {
 	font-family: BMitra;
 }
 body {
@@ -105,4 +105,10 @@ html, body {
 	font-size: .9em;
 	margin-top: 4px;
 	color: #aaa;
+}
+
+/* disqus */
+
+#global-nav {
+	display: none;
 }
